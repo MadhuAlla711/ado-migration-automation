@@ -21,7 +21,7 @@ jobs:
           python-version: 3.11
 
       - name: Install dependencies
-        run: pip install requests msal azure-devops
+        run: pip install requests msal azure-devops gitpython
 
       - name: Run ADO Migration
         run: |
