@@ -15,13 +15,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Azure login via OIDC
-        uses: azure/login@v1
-        with:
-          client-id: ${{ secrets.AZURE_CLIENT_ID }}
-          tenant-id: ${{ secrets.AZURE_TENANT_ID }}
-          subscription-id: 00000000-0000-0000-0000-000000000000
-
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
